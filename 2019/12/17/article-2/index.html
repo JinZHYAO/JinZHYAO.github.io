@@ -10,16 +10,16 @@
 <title>XML学习（1） - yjz的博客</title>
 
 
-    <meta name="description" content="由于毕设选题最近开始学习XML相关知识">
+    <meta name="description" content="XML基础">
 <meta name="keywords" content="XML">
 <meta property="og:type" content="article">
 <meta property="og:title" content="XML学习（1）">
 <meta property="og:url" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;2019&#x2F;12&#x2F;17&#x2F;article-2&#x2F;index.html">
 <meta property="og:site_name" content="yjz的博客">
-<meta property="og:description" content="由于毕设选题最近开始学习XML相关知识">
+<meta property="og:description" content="XML基础">
 <meta property="og:locale" content="ch">
 <meta property="og:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;snow03.jpeg">
-<meta property="og:updated_time" content="2019-12-17T16:42:31.280Z">
+<meta property="og:updated_time" content="2019-12-18T03:09:29.968Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;snow03.jpeg">
 
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes 读完 (大约 561 个字)
+                    4 minutes 读完 (大约 573 个字)
                 </span>
                 
                 
@@ -175,10 +175,9 @@
             
         </h1>
         <div class="content">
-            <p>由于毕设选题最近开始学习XML相关知识</p>
-<a id="more"></a>
+            <h1 id="XML基础"><a href="#XML基础" class="headerlink" title="XML基础"></a>XML基础</h1><a id="more"></a>
 
-<h1 id="XML基础"><a href="#XML基础" class="headerlink" title="XML基础"></a>XML基础</h1><h2 id="XML简介"><a href="#XML简介" class="headerlink" title="XML简介"></a>XML简介</h2><h3 id="什么是XML？"><a href="#什么是XML？" class="headerlink" title="什么是XML？"></a>什么是XML？</h3><p>XML（E<strong>x</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage）可扩展标记语言。是一种标记电子文件使其具有结构性的标记语言。</p>
+<h2 id="XML简介"><a href="#XML简介" class="headerlink" title="XML简介"></a>XML简介</h2><h3 id="什么是XML？"><a href="#什么是XML？" class="headerlink" title="什么是XML？"></a>什么是XML？</h3><p>XML（E<strong>x</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage）可扩展标记语言。是一种标记电子文件使其具有结构性的标记语言。</p>
 <h3 id="XML和HTML之间的异同以及特点"><a href="#XML和HTML之间的异同以及特点" class="headerlink" title="XML和HTML之间的异同以及特点"></a>XML和HTML之间的异同以及特点</h3><ul>
 <li>XML：被设计用来传输和存储数据    HTML：用来格式化并显示数据</li>
 <li>XML是对HTML的补充而不是替代</li>
@@ -201,19 +200,19 @@
 <h3 id="一个XML文档实例"><a href="#一个XML文档实例" class="headerlink" title="一个XML文档实例"></a>一个XML文档实例</h3><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;?xml version="1.0" encoding="ISO-8895-1"?&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">note</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">to</span>&gt;</span>Tove<span class="hljs-tag">&lt;/<span class="hljs-name">to</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">from</span>&gt;</span>Jani<span class="hljs-tag">&lt;/<span class="hljs-name">from</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>Reminder<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>Don't forget me this weekend!<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">note</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <p>第一行是声明，定义了XML的版本和所使用的编码</p>
-<p>第二行是根元素  <note> （像是在说：该文档是个便签）</note></p>
+<p>第二行是根元素  &lt;note&gt;（像是在说：该文档是个便签）</p>
 <p>接下来的是描述根的四个子元素 to , from , heading 和 body</p>
-<p>最后是根元素的结尾  </p>
+<p>最后是根元素的结尾  &lt;/note&gt;</p>
 <p>可以假设该文档是一张Jani写给Tove的便签，由此也可以看出XML其优秀的自我描述性</p>
 <h3 id="XML文档的树结构"><a href="#XML文档的树结构" class="headerlink" title="XML文档的树结构"></a>XML文档的树结构</h3><p>XML文档必须包含<strong>根元素</strong>。该元素是所有其他元素的父元素，所有的子元素也可以拥有子元素。</p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">root</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">child</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">subchild</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">subchild</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">child</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">root</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <p>父、子以及兄弟用来描述元素之间的关系。父元素拥有子元素，相同层级上的子元素互为兄弟。</p>
-<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><p><img src="/2019/12/17/article-2/ct_nodetree1.gif" alt></p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p><img src="/2019/12/17/article-2/ct_nodetree1.gif" alt></p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">"COOKING"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>Everyday Italian<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Giada De Laurentiis<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>30.00<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">"CHILDREN"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">"WEB"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>Learning XML<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Erik T. Ray<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2003<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>39.95<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span></span></pre></td></tr></table></figure>
 
-<p>例子中的根元素是 <bookstore>。文档中的所有 <book> 元素都被包含在 <bookstore> 中。</bookstore></book></bookstore></p>
-<p><book> 元素有 4 个子元素：<title>、&lt; author&gt;、<year>、<price>。</price></year></title></book></p>
+<p>例子中的根元素是 &lt;bookstore&gt;。文档中的所有 &lt;book&gt; 元素都被包含在 &lt;bookstore&gt; 中。</p>
+<p>&lt;book&gt; 元素有 4 个子元素：&lt;title&gt;、&lt;author&gt;、&lt;year&gt;、&lt;price&gt;。</p>
 
         </div>
         
@@ -469,6 +468,10 @@
         <a class="is-flex" href="#XML文档的树结构">
         <span class="has-mr-6">1.2.2</span>
         <span>XML文档的树结构</span>
+        </a></li><li>
+        <a class="is-flex" href="#实例">
+        <span class="has-mr-6">1.2.3</span>
+        <span>实例</span>
         </a></li></ul></li></ul></li></ul>
             </div>
         </div>
