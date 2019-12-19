@@ -19,7 +19,7 @@
 <meta property="og:description" content="XML基础">
 <meta property="og:locale" content="ch">
 <meta property="og:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;snow03.jpeg">
-<meta property="og:updated_time" content="2019-12-18T15:27:06.049Z">
+<meta property="og:updated_time" content="2019-12-19T08:50:43.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;snow03.jpeg">
 
@@ -177,7 +177,11 @@
         <div class="content">
             <h1 id="XML基础"><a href="#XML基础" class="headerlink" title="XML基础"></a>XML基础</h1><a id="more"></a>
 
+<hr>
+
 <h2 id="XML简介"><a href="#XML简介" class="headerlink" title="XML简介"></a>XML简介</h2><h3 id="什么是XML？"><a href="#什么是XML？" class="headerlink" title="什么是XML？"></a>什么是XML？</h3><p>XML（E<strong>x</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage）可扩展标记语言。是一种标记电子文件使其具有结构性的标记语言。</p>
+<hr>
+
 <h3 id="XML和HTML之间的异同以及特点"><a href="#XML和HTML之间的异同以及特点" class="headerlink" title="XML和HTML之间的异同以及特点"></a>XML和HTML之间的异同以及特点</h3><ul>
 <li>XML：被设计用来传输和存储数据    HTML：用来格式化并显示数据</li>
 <li>XML是对HTML的补充而不是替代</li>
@@ -187,21 +191,19 @@
 <li>XML是独立于软件和硬件的信息传输工具</li>
 <li>W3C的推荐标准</li>
 </ul>
+<hr>
+
 <h3 id="XML用途"><a href="#XML用途" class="headerlink" title="XML用途"></a>XML用途</h3><p>常用于简化数据的存储和共享</p>
 <ul>
-<li><p>把数据从HTML分离</p>
-</li>
-<li><p>简化数据共享</p>
-</li>
-<li><p>简化数据传输</p>
-</li>
-<li><p>简化平台变更</p>
-</li>
-<li><p>使数据更有用</p>
-</li>
-<li><p>用于创建新的互联网语言</p>
-</li>
+<li>把数据从HTML分离</li>
+<li>简化数据共享</li>
+<li>简化数据传输</li>
+<li>简化平台变更</li>
+<li>使数据更有用</li>
+<li>用于创建新的互联网语言</li>
 </ul>
+<hr>
+
 <h2 id="XML树结构"><a href="#XML树结构" class="headerlink" title="XML树结构"></a>XML树结构</h2><p>XML文档形成了一种树结构，常称为XML树。可以轻易的描述任何XML文档。</p>
 <h3 id="一个XML文档实例"><a href="#一个XML文档实例" class="headerlink" title="一个XML文档实例"></a>一个XML文档实例</h3><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;?xml version="1.0" encoding="ISO-8895-1"?&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">note</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">to</span>&gt;</span>Tove<span class="hljs-tag">&lt;/<span class="hljs-name">to</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">from</span>&gt;</span>Jani<span class="hljs-tag">&lt;/<span class="hljs-name">from</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>Reminder<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>Don't forget me this weekend!<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">note</span>&gt;</span></span></pre></td></tr></table></figure>
 
@@ -210,15 +212,21 @@
 <p>接下来的是描述根的四个子元素 to , from , heading 和 body</p>
 <p>最后是根元素的结尾  &lt;/note&gt;</p>
 <p>可以假设该文档是一张Jani写给Tove的便签，由此也可以看出XML其优秀的自我描述性</p>
+<hr>
+
 <h3 id="XML文档的树结构"><a href="#XML文档的树结构" class="headerlink" title="XML文档的树结构"></a>XML文档的树结构</h3><p>XML文档必须包含<strong>根元素</strong>。该元素是所有其他元素的父元素，所有的子元素也可以拥有子元素。</p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">root</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">child</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">subchild</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">subchild</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">child</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">root</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <p>父、子以及兄弟用来描述元素之间的关系。父元素拥有子元素，相同层级上的子元素互为兄弟。</p>
+<hr>
+
 <h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p><img src="/2019/12/17/article-2/ct_nodetree1.gif" alt></p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">"COOKING"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>Everyday Italian<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Giada De Laurentiis<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>30.00<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">"CHILDREN"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">"WEB"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>Learning XML<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Erik T. Ray<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2003<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>39.95<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <p>例子中的根元素是 &lt;bookstore&gt;。文档中的所有 &lt;book&gt; 元素都被包含在 &lt;bookstore&gt; 中。</p>
 <p>&lt;book&gt; 元素有 4 个子元素：&lt;title&gt;、&lt;author&gt;、&lt;year&gt;、&lt;price&gt;。</p>
+<hr>
+
 <h2 id="XML语法"><a href="#XML语法" class="headerlink" title="XML语法"></a>XML语法</h2><ol>
 <li><h6 id="所有的XML元素都必须有一个关闭标签"><a href="#所有的XML元素都必须有一个关闭标签" class="headerlink" title="所有的XML元素都必须有一个关闭标签"></a>所有的XML元素都必须有一个关闭标签</h6><p>例如：</p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;?xml version="1.0" encoding='UTF-8'?&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></pre></td></tr></table></figure>
@@ -269,6 +277,8 @@
 <li><h6 id="XML中，空格会被保留"><a href="#XML中，空格会被保留" class="headerlink" title="XML中，空格会被保留"></a>XML中，空格会被保留</h6></li>
 <li><h6 id="XML以LF存储换行"><a href="#XML以LF存储换行" class="headerlink" title="XML以LF存储换行"></a>XML以LF存储换行</h6></li>
 </ol>
+<hr>
+
 <h2 id="XML元素"><a href="#XML元素" class="headerlink" title="XML元素"></a>XML元素</h2><h3 id="什么是XML元素？"><a href="#什么是XML元素？" class="headerlink" title="什么是XML元素？"></a>什么是XML元素？</h3><p>XML元素指的是从（且包括）开始标签直到（且包括）结束标签的部分。它是XML文档中不可缺少的部分。一个元素可以包含：</p>
 <ul>
 <li>其他元素</li>
@@ -276,30 +286,31 @@
 <li>属性</li>
 <li>以上一或多种的混合</li>
 </ul>
+<hr>
+
 <h3 id="XML命名规则"><a href="#XML命名规则" class="headerlink" title="XML命名规则"></a>XML命名规则</h3><p>XML元素必须遵循以下命名规则：</p>
 <ul>
-<li><p>可以包含字母、数字以及其他字符</p>
-</li>
-<li><p>不能以数字或者标点符号开始</p>
-</li>
-<li><p>不能以字母xml（或者XML、Xml等等）开始</p>
-</li>
-<li><p>不能包含空格</p>
-</li>
-<li><p>可食用任何名称，没有保留字</p>
-</li>
+<li>可以包含字母、数字以及其他字符</li>
+<li>不能以数字或者标点符号开始</li>
+<li>不能以字母xml（或者XML、Xml等等）开始</li>
+<li>不能包含空格</li>
+<li>可食用任何名称，没有保留字</li>
 </ul>
+<hr>
+
 <h2 id="XML属性"><a href="#XML属性" class="headerlink" title="XML属性"></a>XML属性</h2><p>属性是XML元素的一部分，一个元素可以拥有多个属性。属性提供了有关于元素的额外信息。这些信息通常不属于数据组成部分的信息，但可能对处理信息的程序或者软件来说很关键。</p>
 <p><strong>XML属性值必须加引号。</strong></p>
 <p>单引号或者双引号均可以。如果属性值本身包含双引号可以使用单引号，或是转义引用。</p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">person</span> <span class="hljs-attr">sex</span>=<span class="hljs-string">'male'</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">person</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">person</span> <span class="hljs-attr">sex</span>=<span class="hljs-string">"male"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">person</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">player</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'"Magic"Johnson'</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">player</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">player</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'&amp;lt;Magic&amp;gt;Johnson'</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">player</span>&gt;</span></span></pre></td></tr></table></figure>
 
-
+<hr>
 
 <h2 id="XML-DTD"><a href="#XML-DTD" class="headerlink" title="XML DTD"></a>XML DTD</h2><p>DTD: 文档类型定义 (Docunment Type Definition)</p>
 <p>拥有正确语法的XML被称为”形式良好“的XML。通过DTD验证的XML是“合法”的XML。W3C支持一种基于XML的DTD代替者，名为XML Schema。</p>
-<h2 id="XML-和-CSS，XSLT"><a href="#XML-和-CSS，XSLT" class="headerlink" title="XML 和 CSS，XSLT"></a>XML 和 CSS，XSLT</h2><p>可以使用CSS样式表来格式化XML文档，但推荐使用XSLT，是首选的XML样式表语言。</p>
+<hr>
 
+<h2 id="XML-和-CSS，XSLT"><a href="#XML-和-CSS，XSLT" class="headerlink" title="XML 和 CSS，XSLT"></a>XML 和 CSS，XSLT</h2><p>可以使用CSS样式表来格式化XML文档，但推荐使用XSLT，是首选的XML样式表语言。</p>
+<hr>
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -355,6 +366,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/19/article-3/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">XML学习（2）</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -434,7 +452,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            5
+                            6
                         </p>
                     </a>
                 </div>
@@ -664,7 +682,7 @@
                 <span class="level-item">学习笔记</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/XML/">
@@ -672,7 +690,7 @@
                 <span class="level-item">XML</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li></ul></li><li>
         <a class="level is-marginless" href="/categories/%E6%B5%8B%E8%AF%95/">
@@ -701,7 +719,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/XML/" style="font-size: 10px;">XML</a> <a href="/tags/%E5%8F%A4%E8%AF%97%E6%96%87/" style="font-size: 20px;">古诗文</a> <a href="/tags/%E5%9B%BE%E9%9B%86/" style="font-size: 10px;">图集</a> <a href="/tags/%E6%96%87%E5%AD%97/" style="font-size: 10px;">文字</a> <a href="/tags/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" style="font-size: 20px;">测试文章</a>
+        <a href="/tags/XML/" style="font-size: 20px;">XML</a> <a href="/tags/%E5%8F%A4%E8%AF%97%E6%96%87/" style="font-size: 20px;">古诗文</a> <a href="/tags/%E5%9B%BE%E9%9B%86/" style="font-size: 10px;">图集</a> <a href="/tags/%E6%96%87%E5%AD%97/" style="font-size: 10px;">文字</a> <a href="/tags/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" style="font-size: 20px;">测试文章</a>
     </div>
 </div>
     
@@ -713,6 +731,25 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/12/19/article-3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/thumbnail/castle.jpg" alt="XML学习（2）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-19T07:34:26.000Z">2019-12-19</time></div>
+                    <a href="/2019/12/19/article-3/" class="title has-link-black-ter is-size-6 has-text-weight-normal">XML学习（2）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a> / <a class="has-link-grey -link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/XML/">XML</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -790,25 +827,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/11/29/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/thumbnail/deer.jpg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-29T13:29:03.862Z">2019-11-29</time></div>
-                    <a href="/2019/11/29/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -826,7 +844,7 @@
                     <span class="level-item">December 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -858,7 +876,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/XML/">
                         <span class="tag">XML</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -914,6 +932,25 @@
         
         <article class="media">
             
+            <a href="/2019/12/19/article-3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/thumbnail/castle.jpg" alt="XML学习（2）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-19T07:34:26.000Z">2019-12-19</time></div>
+                    <a href="/2019/12/19/article-3/" class="title has-link-black-ter is-size-6 has-text-weight-normal">XML学习（2）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a> / <a class="has-link-grey -link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/XML/">XML</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/12/17/article-2/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/gallery/thumbnail/snow03.jpeg" alt="XML学习（1）">
@@ -988,25 +1025,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/11/29/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/thumbnail/deer.jpg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-29T13:29:03.862Z">2019-11-29</time></div>
-                    <a href="/2019/11/29/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1024,7 +1042,7 @@
                     <span class="level-item">December 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -1056,7 +1074,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/XML/">
                         <span class="tag">XML</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
