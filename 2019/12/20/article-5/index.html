@@ -19,7 +19,7 @@
 <meta property="og:description" content="XML  进阶 - 2">
 <meta property="og:locale" content="ch">
 <meta property="og:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;ricefield.jpg">
-<meta property="og:updated_time" content="2019-12-21T15:56:58.234Z">
+<meta property="og:updated_time" content="2019-12-21T16:02:59.529Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;ricefield.jpg">
 
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes 读完 (大约 527 个字)
+                    3 minutes 读完 (大约 523 个字)
                 </span>
                 
                 
@@ -182,14 +182,14 @@
 <h2 id="服务器上的-XML"><a href="#服务器上的-XML" class="headerlink" title="服务器上的 XML"></a>服务器上的 XML</h2><p>XML是类似于HTML文件的纯文本文件。可以通过标准的Web服务器轻松的存储和生成。</p>
 <p>详见:  <a href="https://www.runoob.com/xml/xml-server.html" target="_blank" rel="noopener">https://www.runoob.com/xml/xml-server.html</a></p>
 <hr>
-## XML DOM 高级
 
-<p>示例文件：</p>
+<h2 id="高级-XML-DOM"><a href="#高级-XML-DOM" class="headerlink" title="高级 XML DOM"></a>高级 XML DOM</h2><p>示例文件：</p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">"COOKING"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>Everyday Italian<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Giada De Laurentiis<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>30.00<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <hr>
+### 获取元素的值
 
-<h2 id="高级XML-DOM"><a href="#高级XML-DOM" class="headerlink" title="高级XML DOM"></a>高级XML DOM</h2><h3 id="获取元素的值"><a href="#获取元素的值" class="headerlink" title="获取元素的值"></a>获取元素的值</h3><p>例如：检索第一个 &lt;title&gt; 元素的文本值</p>
+<p>例如：检索第一个 &lt;title&gt; 元素的文本值</p>
 <figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">txt=xmlDoc.getElementsByTagName(<span class="hljs-string">"title"</span>)[<span class="hljs-number">0</span>].childNodes[<span class="hljs-number">0</span>].nodeValue;</span></pre></td></tr></table></figure>
 
 <hr>
@@ -463,32 +463,28 @@
         <span class="has-mr-6">1.1</span>
         <span>服务器上的 XML</span>
         </a></li><li>
-        <a class="is-flex" href="#高级XML-DOM">
+        <a class="is-flex" href="#高级-XML-DOM">
         <span class="has-mr-6">1.2</span>
-        <span>高级XML DOM</span>
+        <span>高级 XML DOM</span>
         </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#获取元素的值">
-        <span class="has-mr-6">1.2.1</span>
-        <span>获取元素的值</span>
-        </a></li><li>
         <a class="is-flex" href="#获取属性的值">
-        <span class="has-mr-6">1.2.2</span>
+        <span class="has-mr-6">1.2.1</span>
         <span>获取属性的值</span>
         </a></li><li>
         <a class="is-flex" href="#改变元素的值">
-        <span class="has-mr-6">1.2.3</span>
+        <span class="has-mr-6">1.2.2</span>
         <span>改变元素的值</span>
         </a></li><li>
         <a class="is-flex" href="#创建新的属性">
-        <span class="has-mr-6">1.2.4</span>
+        <span class="has-mr-6">1.2.3</span>
         <span>创建新的属性</span>
         </a></li><li>
         <a class="is-flex" href="#创建元素">
-        <span class="has-mr-6">1.2.5</span>
+        <span class="has-mr-6">1.2.4</span>
         <span>创建元素</span>
         </a></li><li>
         <a class="is-flex" href="#删除元素">
-        <span class="has-mr-6">1.2.6</span>
+        <span class="has-mr-6">1.2.5</span>
         <span>删除元素</span>
         </a></li></ul></li></ul></li></ul>
             </div>
