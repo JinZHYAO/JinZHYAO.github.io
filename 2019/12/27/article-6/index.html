@@ -10,16 +10,16 @@
 <title>SVG学习（1） - yjz的博客</title>
 
 
-    <meta name="description" content="SVG基础 (1)">
+    <meta name="description" content="SVG基础">
 <meta name="keywords" content="XML,SVG">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SVG学习（1）">
 <meta property="og:url" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;2019&#x2F;12&#x2F;27&#x2F;article-6&#x2F;index.html">
 <meta property="og:site_name" content="yjz的博客">
-<meta property="og:description" content="SVG基础 (1)">
+<meta property="og:description" content="SVG基础">
 <meta property="og:locale" content="ch">
 <meta property="og:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;sunset.jpg">
-<meta property="og:updated_time" content="2019-12-27T19:04:56.253Z">
+<meta property="og:updated_time" content="2019-12-28T17:50:10.979Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;sunset.jpg">
 
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes 读完 (大约 557 个字)
+                    4 minutes 读完 (大约 573 个字)
                 </span>
                 
                 
@@ -175,7 +175,7 @@
             
         </h1>
         <div class="content">
-            <h1 id="SVG基础-1"><a href="#SVG基础-1" class="headerlink" title="SVG基础 (1)"></a>SVG基础 (1)</h1><a id="more"></a>
+            <h1 id="SVG基础"><a href="#SVG基础" class="headerlink" title="SVG基础"></a>SVG基础</h1><a id="more"></a>
 
 <hr>
 
@@ -204,7 +204,7 @@
 <p>SVG 的 &lt;circle&gt; 用来创建一个圆。cx 和 cy 属性定义圆中心的 x 和 y 坐标。如果忽略这两个属性，那么圆心坐标会被设置为 ( 0 , 0 )。r 属性定义圆的半径。stroke 和 stroke-width 属性控制如何显示形状的轮廓。我们把轮廓设置为2px宽，黑边框。fill 属性设置形状内的颜色。</p>
 <hr>
 
-<h2 id="SVG-在-HTML"><a href="#SVG-在-HTML" class="headerlink" title="SVG 在 HTML"></a>SVG 在 HTML</h2><p>可以使用&lt;enbed&gt;,&lt;object&gt;或者&lt;iframe&gt;在 HTML 文档中嵌入SVG文件。SVG代码也可以直接嵌入到 HTML 文档中。</p>
+<h2 id="SVG-在-HTML"><a href="#SVG-在-HTML" class="headerlink" title="SVG 在 HTML"></a>SVG 在 HTML</h2><p>可以使用&lt;embed&gt;,&lt;object&gt;或者&lt;iframe&gt;在 HTML 文档中嵌入SVG文件。SVG代码也可以直接嵌入到 HTML 文档中。img ，a标签也可以引用。css中也可。</p>
 <p>例如：</p>
 <figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">embed</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"circle1.svg"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/svg+xml"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">object</span> <span class="hljs-attr">data</span>=<span class="hljs-string">"circle1.svg"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/svg+xml"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">object</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"circle1.svg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">   <span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"40"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"red"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
 
@@ -443,9 +443,9 @@
                     目录
                 </h3>
                 <ul class="menu-list"><li>
-        <a class="is-flex" href="#SVG基础-1">
+        <a class="is-flex" href="#SVG基础">
         <span class="has-mr-6">1</span>
-        <span>SVG基础 (1)</span>
+        <span>SVG基础</span>
         </a><ul class="menu-list"><li>
         <a class="is-flex" href="#SVG简介">
         <span class="has-mr-6">1.1</span>

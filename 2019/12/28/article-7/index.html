@@ -10,16 +10,16 @@
 <title>SVG学习（2） - yjz的博客</title>
 
 
-    <meta name="description" content="SVG基础 (2)">
+    <meta name="description" content="SVG形状">
 <meta name="keywords" content="XML,SVG">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SVG学习（2）">
 <meta property="og:url" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;2019&#x2F;12&#x2F;28&#x2F;article-7&#x2F;index.html">
 <meta property="og:site_name" content="yjz的博客">
-<meta property="og:description" content="SVG基础 (2)">
+<meta property="og:description" content="SVG形状">
 <meta property="og:locale" content="ch">
 <meta property="og:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;cobble.jpg">
-<meta property="og:updated_time" content="2019-12-27T19:07:21.213Z">
+<meta property="og:updated_time" content="2019-12-28T17:45:37.449Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;cobble.jpg">
 
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds 读完 (大约 42 个字)
+                    2 minutes 读完 (大约 368 个字)
                 </span>
                 
                 
@@ -175,23 +175,57 @@
             
         </h1>
         <div class="content">
-            <h1 id="SVG基础-2"><a href="#SVG基础-2" class="headerlink" title="SVG基础 (2)"></a>SVG基础 (2)</h1><a id="more"></a>
+            <h1 id="SVG形状"><a href="#SVG形状" class="headerlink" title="SVG形状"></a>SVG形状</h1><a id="more"></a>
 
+<h2 id="矩形-lt-rect-gt"><a href="#矩形-lt-rect-gt" class="headerlink" title="矩形 &lt;rect&gt;"></a>矩形 &lt;rect&gt;</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">x</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">y</span>=<span class="hljs-string">"20"</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">"20"</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">"20"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"120"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"100"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">  <span class="hljs-attr">style</span>=<span class="hljs-string">"fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag"><span class="hljs-string">  stroke-opacity:0.9;opacity:0.5"</span>/&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><img src="/2019/12/28/article-7/rect.PNG" alt></p>
+<p>rect 元素的 width 和 height 属性可定义矩形的宽度和高度，x 和 y 定义矩形的左侧位置和顶端位置，rx 和 ry 属性使矩形产生圆角。</p>
+<p>style 属性用来定义 CSS 属性:</p>
+<ul>
+<li>fill 矩形的填充颜色，使用rgb值、颜色名或者十六进制值</li>
+<li>stroke-width 定义矩形边框的宽度</li>
+<li>stroke 定义矩形边框的颜色</li>
+<li>opacity 定义填充颜色透明度 （合法范围：0-1）</li>
+<li>fill-opacity 定义填充颜色透明度 （合法范围：0-1）</li>
+<li>stroke-opacity 定义轮廓颜色的透明度 （合法范围：0-1）</li>
+</ul>
 <hr>
 
-<h2 id="SVG形状"><a href="#SVG形状" class="headerlink" title="SVG形状"></a>SVG形状</h2><h3 id="矩形-lt-rect-gt"><a href="#矩形-lt-rect-gt" class="headerlink" title="矩形 &lt;rect&gt;"></a>矩形 &lt;rect&gt;</h3><hr>
+<h2 id="圆形-lt-circle-gt"><a href="#圆形-lt-circle-gt" class="headerlink" title="圆形 &lt;circle&gt;"></a>圆形 &lt;circle&gt;</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"40"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"black"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">  <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"red"</span>/&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
 
-<h3 id="圆形-lt-circle-gt"><a href="#圆形-lt-circle-gt" class="headerlink" title="圆形 &lt;circle&gt;"></a>圆形 &lt;circle&gt;</h3><hr>
+<p><img src="/2019/12/28/article-7/circle.PNG" alt></p>
+<p>cx 和 cy 属性定义圆点的坐标，如省略则坐标为（0 , 0）</p>
+<p>r 属性定义圆的半径</p>
+<hr>
 
-<h3 id="椭圆-lt-ellipse-gt"><a href="#椭圆-lt-ellipse-gt" class="headerlink" title="椭圆 &lt;ellipse&gt;"></a>椭圆 &lt;ellipse&gt;</h3><hr>
 
-<h3 id="线-lt-line-gt"><a href="#线-lt-line-gt" class="headerlink" title="线&lt;line&gt;"></a>线&lt;line&gt;</h3><hr>
+<h2 id="椭圆-lt-ellipse-gt"><a href="#椭圆-lt-ellipse-gt" class="headerlink" title="椭圆 &lt;ellipse&gt;"></a>椭圆 &lt;ellipse&gt;</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"150"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"80"</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">"50"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">  <span class="hljs-attr">style</span>=<span class="hljs-string">"fill:yellow;stroke:purple;stroke-width:2"</span>/&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
 
-<h3 id="折线-lt-polyline-gt"><a href="#折线-lt-polyline-gt" class="headerlink" title="折线&lt;polyline&gt;"></a>折线&lt;polyline&gt;</h3><hr>
+<p><img src="/2019/12/28/article-7/ellipse.PNG" alt></p>
+<p>cx 和 cy 定义了椭圆中心的坐标，rx 和 ry 定义了椭圆的水平半径和垂直半径</p>
+<hr>
 
-<h3 id="多边形-lt-polyline-gt"><a href="#多边形-lt-polyline-gt" class="headerlink" title="多边形&lt;polyline&gt;"></a>多边形&lt;polyline&gt;</h3><hr>
+<h2 id="线-lt-line-gt"><a href="#线-lt-line-gt" class="headerlink" title="线&lt;line&gt;"></a>线&lt;line&gt;</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">line</span> <span class="hljs-attr">x1</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">y1</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">x2</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">y2</span>=<span class="hljs-string">"200"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">  <span class="hljs-attr">style</span>=<span class="hljs-string">"stroke:rgb(255,0,0);stroke-width:2"</span>/&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
 
-<h3 id="路径-lt-path-gt"><a href="#路径-lt-path-gt" class="headerlink" title="路径&lt;path&gt;"></a>路径&lt;path&gt;</h3><hr>
+<p><img src="/2019/12/28/article-7/line.PNG" alt></p>
+<p>x1 , y1 属性定义了线开始的坐标 (x1 , y1)</p>
+<p>x2 , y2 属性定义了线结束的坐标 (x2 , y2)</p>
+<hr>
+
+<h2 id="折线-lt-polyline-gt"><a href="#折线-lt-polyline-gt" class="headerlink" title="折线&lt;polyline&gt;"></a>折线&lt;polyline&gt;</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">"0,40 40,40 40,80 80,80 80,120 120,120 120,160"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"fill:white;stroke:red;stroke-width:4"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><img src="/2019/12/28/article-7/polyline.PNG" alt></p>
+<p>用于创建任何只有直线的形状。points属性是各点的坐标。</p>
+<hr>
+
+<h2 id="多边形-lt-polygon-gt"><a href="#多边形-lt-polygon-gt" class="headerlink" title="多边形&lt;polygon&gt;"></a>多边形&lt;polygon&gt;</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"210"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"500"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">polygon</span> <span class="hljs-attr">points</span>=<span class="hljs-string">"100,10 40,198 190,78 10,78 160,198"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">  <span class="hljs-attr">style</span>=<span class="hljs-string">"fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><img src="/2019/12/28/article-7/polygon.PNG" alt></p>
+<p>用来创建含有不少于三个边的图形。points 属性定义多边形每个角的 x 和 y 坐标</p>
+<hr>
+
+<h2 id="路径-lt-path-gt"><a href="#路径-lt-path-gt" class="headerlink" title="路径&lt;path&gt;"></a>路径&lt;path&gt;</h2><hr>
 
 
         </div>
@@ -417,42 +451,38 @@
                     目录
                 </h3>
                 <ul class="menu-list"><li>
-        <a class="is-flex" href="#SVG基础-2">
-        <span class="has-mr-6">1</span>
-        <span>SVG基础 (2)</span>
-        </a><ul class="menu-list"><li>
         <a class="is-flex" href="#SVG形状">
-        <span class="has-mr-6">1.1</span>
+        <span class="has-mr-6">1</span>
         <span>SVG形状</span>
         </a><ul class="menu-list"><li>
         <a class="is-flex" href="#矩形-lt-rect-gt">
-        <span class="has-mr-6">1.1.1</span>
+        <span class="has-mr-6">1.1</span>
         <span>矩形 &lt;rect&gt;</span>
         </a></li><li>
         <a class="is-flex" href="#圆形-lt-circle-gt">
-        <span class="has-mr-6">1.1.2</span>
+        <span class="has-mr-6">1.2</span>
         <span>圆形 &lt;circle&gt;</span>
         </a></li><li>
         <a class="is-flex" href="#椭圆-lt-ellipse-gt">
-        <span class="has-mr-6">1.1.3</span>
+        <span class="has-mr-6">1.3</span>
         <span>椭圆 &lt;ellipse&gt;</span>
         </a></li><li>
         <a class="is-flex" href="#线-lt-line-gt">
-        <span class="has-mr-6">1.1.4</span>
+        <span class="has-mr-6">1.4</span>
         <span>线&lt;line&gt;</span>
         </a></li><li>
         <a class="is-flex" href="#折线-lt-polyline-gt">
-        <span class="has-mr-6">1.1.5</span>
+        <span class="has-mr-6">1.5</span>
         <span>折线&lt;polyline&gt;</span>
         </a></li><li>
-        <a class="is-flex" href="#多边形-lt-polyline-gt">
-        <span class="has-mr-6">1.1.6</span>
-        <span>多边形&lt;polyline&gt;</span>
+        <a class="is-flex" href="#多边形-lt-polygon-gt">
+        <span class="has-mr-6">1.6</span>
+        <span>多边形&lt;polygon&gt;</span>
         </a></li><li>
         <a class="is-flex" href="#路径-lt-path-gt">
-        <span class="has-mr-6">1.1.7</span>
+        <span class="has-mr-6">1.7</span>
         <span>路径&lt;path&gt;</span>
-        </a></li></ul></li></ul></li></ul>
+        </a></li></ul></li></ul>
             </div>
         </div>
     </div>
