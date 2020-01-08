@@ -19,7 +19,7 @@
 <meta property="og:description" content="SVG形状">
 <meta property="og:locale" content="ch">
 <meta property="og:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;cobble.jpg">
-<meta property="og:updated_time" content="2019-12-28T17:45:37.449Z">
+<meta property="og:updated_time" content="2020-01-08T14:22:47.986Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;jinzhyao.github.io&#x2F;gallery&#x2F;thumbnail&#x2F;cobble.jpg">
 
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes 读完 (大约 368 个字)
+                    9 minutes 读完 (大约 1343 个字)
                 </span>
                 
                 
@@ -195,7 +195,7 @@
 <h2 id="圆形-lt-circle-gt"><a href="#圆形-lt-circle-gt" class="headerlink" title="圆形 &lt;circle&gt;"></a>圆形 &lt;circle&gt;</h2><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"40"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"black"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">  <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"red"</span>/&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <p><img src="/2019/12/28/article-7/circle.PNG" alt></p>
-<p>cx 和 cy 属性定义圆点的坐标，如省略则坐标为（0 , 0）</p>
+<p>cx 和 cy 属性定义圆心的坐标，如省略则坐标为（0 , 0）</p>
 <p>r 属性定义圆的半径</p>
 <hr>
 
@@ -225,9 +225,54 @@
 <p>用来创建含有不少于三个边的图形。points 属性定义多边形每个角的 x 和 y 坐标</p>
 <hr>
 
-<h2 id="路径-lt-path-gt"><a href="#路径-lt-path-gt" class="headerlink" title="路径&lt;path&gt;"></a>路径&lt;path&gt;</h2><hr>
+<h2 id="路径-lt-path-gt"><a href="#路径-lt-path-gt" class="headerlink" title="路径&lt;path&gt;"></a>路径&lt;path&gt;</h2><p>path元素的形状是由通过属性 <strong>d</strong> 定义的，属性 <strong>d</strong> 的值是一个“命令 + 参数 ” 的序列，描述了一个点集数列以及如何绘制路径的信息。每一种命令都有大写和小写两种形式。<strong>大写字母</strong>，表示采用绝对定位。<strong>小写字母</strong>，表示采用相对定位。</p>
+<h3 id="直线命令"><a href="#直线命令" class="headerlink" title="直线命令"></a>直线命令</h3><h4 id="Move-to"><a href="#Move-to" class="headerlink" title="Move to"></a>Move to</h4><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">M x y</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">m dx dy</span></pre></td></tr></table></figure>
 
+<p>两个参数代表需要移动到的位置的x和y坐标。M命令仅可以移动画笔，并不会在两个点之间画线。所以M命令通常出现在路径的开始位置，来指明从何处开始画。</p>
+<hr>
 
+<h4 id="Line-to"><a href="#Line-to" class="headerlink" title="Line to"></a>Line to</h4><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">L x y</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">l dx dy</span></pre></td></tr></table></figure>
+
+<p>两个参数代表新位置的x和y坐标，L坐标将会在当前位置和新位置之间画一条线段。</p>
+<hr>
+
+<h4 id="H-amp-V"><a href="#H-amp-V" class="headerlink" title="H &amp; V"></a>H &amp; V</h4><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">H x ( h dx )</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">V y ( v dy )</span></pre></td></tr></table></figure>
+
+<p>H 绘制水平线。</p>
+<p>V 绘制垂直线。</p>
+<p>它们都只带有一个参数，表明在x或y轴将要移动到的位置，因为它们只在坐标轴的一个方向上移动。</p>
+<hr>
+
+<h4 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h4><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Z ( or z )</span></pre></td></tr></table></figure>
+
+<p>闭合路径指令，在当前点画一条直线到路径的起点。Z命令不区分大小写。</p>
+<hr>
+
+<h3 id="曲线命令"><a href="#曲线命令" class="headerlink" title="曲线命令"></a>曲线命令</h3><h4 id="贝塞尔曲线"><a href="#贝塞尔曲线" class="headerlink" title="贝塞尔曲线"></a>贝塞尔曲线</h4><h5 id="C-三次贝塞尔曲线-amp-S"><a href="#C-三次贝塞尔曲线-amp-S" class="headerlink" title="C 三次贝塞尔曲线 &amp; S"></a>C 三次贝塞尔曲线 &amp; S</h5><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">C x1 y1, x2 y2, x y (or c dx1 dy1, dx2 dy2, dx dy)</span></pre></td></tr></table></figure>
+
+<p>三次贝塞尔曲线需要定义一个点和两个控制点，这里的最后一个坐标(x,y)表示的是曲线的终点，另外两个坐标是控制点，(x1,y1)是起点的控制点，(x2,y2)是终点的控制点。</p>
+<p>控制点描述的是曲线起始点的斜率，曲线上各个点的斜率，是从起点斜率到终点斜率的渐变过程。</p>
+<p><img src="/2019/12/28/article-7/path01.png" alt></p>
+<figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">S x2 y2, x y (or s dx2 dy2, dx dy)</span></pre></td></tr></table></figure>
+
+<p>S命令可以用来创建与前面一样的贝塞尔曲线，但是，如果S命令跟在一个C或S命令后面，则它的第一个控制点会被假设成前一个命令曲线的第二个控制点的中心对称点。如果S命令单独使用，前面没有C或S命令，那当前点将作为第一个控制点。</p>
+<hr>
+##### Q 二次贝塞尔曲线 & T
+
+<figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Q x1 y1, x y (or q dx1 dy1, dx dy)</span></pre></td></tr></table></figure>
+
+<p>只需要一个控制点，用来确定起点和终点的曲线斜率。因此它需要两组参数，控制点和终点坐标。</p>
+<p><img src="/2019/12/28/article-7/path02.png" alt></p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">T x y (or t dx dy)</span></pre></td></tr></table></figure>
+
+<p>快捷命令T会通过前一个控制点，推断出一个新的控制点。需要注意的是，T命令前面必须是一个Q命令，或者是另一个T命令。如果T单独使用，那么控制点就会被认为和终点是同一个点，所以画出来的将是一条直线。</p>
+<hr>
+
+<h4 id="弧形"><a href="#弧形" class="headerlink" title="弧形"></a>弧形</h4><h5 id="A"><a href="#A" class="headerlink" title="A"></a>A</h5><figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">A rx ry x-axis-rotation large-arc-flag sweep-flag x y</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">a rx ry x-axis-rotation large-arc-flag sweep-flag dx dy</span></pre></td></tr></table></figure>
+
+<p>弧形命令A的前两个参数分别是x轴半径和y轴半径,的第三个参数表示弧形的旋转情况,large-arc-flag（角度大小）  和sweep-flag（弧线方向），large-arc-flag决定弧线是大于还是小于180度，0表示小角度弧，1表示大角度弧。sweep-flag表示弧线的方向，0表示从起点到终点沿逆时针画弧，1表示从起点到终点沿顺时针画弧，最后两个参数是指定弧形的终点。</p>
+<p><img src="/2019/12/28/article-7/path03.png" alt></p>
+<h5 id="贝塞尔曲线学习：-https-www-jianshu-com-p-8f82db9556d2"><a href="#贝塞尔曲线学习：-https-www-jianshu-com-p-8f82db9556d2" class="headerlink" title="贝塞尔曲线学习： https://www.jianshu.com/p/8f82db9556d2"></a>贝塞尔曲线学习： <a href="https://www.jianshu.com/p/8f82db9556d2" target="_blank" rel="noopener">https://www.jianshu.com/p/8f82db9556d2</a></h5>
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -482,7 +527,15 @@
         <a class="is-flex" href="#路径-lt-path-gt">
         <span class="has-mr-6">1.7</span>
         <span>路径&lt;path&gt;</span>
-        </a></li></ul></li></ul>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#直线命令">
+        <span class="has-mr-6">1.7.1</span>
+        <span>直线命令</span>
+        </a></li><li>
+        <a class="is-flex" href="#曲线命令">
+        <span class="has-mr-6">1.7.2</span>
+        <span>曲线命令</span>
+        </a></li></ul></li></ul></li></ul>
             </div>
         </div>
     </div>
@@ -1035,7 +1088,7 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 JinZhe Yao&nbsp;
+                &copy; 2020 JinZhe Yao&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
